@@ -1,5 +1,6 @@
 <?php
 
+
 namespace JTL\Catalog\Product;
 
 use DateTime;
