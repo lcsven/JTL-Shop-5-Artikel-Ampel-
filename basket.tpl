@@ -17,7 +17,7 @@
                         {lang key='chooseVariations' section='messages'}
                     {/alert}
                 {/block}
-            {elseif $Artikel->inWarenkorbLegbar == 1 }
+            {elseif $Artikel->inWarenkorbLegbar == 1 && $Artikel->Lageranzeige->nStatus <> 0}
                 {if !$showMatrix}
                     {block name='productdetails-basket-form-inline'}
                         {row class="basket-form-inline"}
